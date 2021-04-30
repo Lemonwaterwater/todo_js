@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>React App</title>
+
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div id="root">
+        <div class="todo-container">
+            <div class="todo-wrap">
+                <div class="todo-header" id="todo-header">
+                    <input id="headerInput" type="text" placeholder="请输入你的任务名称，按回车键确认" />
+                </div>
+                <ul class="todo-main" id="todo-main">
+                    <li>
+                        <input type="checkbox" />
+                        <input class="content" type="text" value="xxxxxx">
+                        <button class="btn btn-danger">删除</button>
+                    </li>
+                    <li>
+                        <input type="checkbox" />
+                        <input class="content" type="text" value="xxxxxx">
+                        <button class="btn btn-danger">删除</button>
+                    </li>
+                </ul>
+                <div class="todo-footer">
+                    <label>
+              <input type="checkbox" id="selectAll" />
+            </label>
+                    <span> <span id="compNum">已完成0</span> /<span id="allNum">全部0</span></span>
+                    </span>
+                    <button class="btn btn-danger">清除已完成任务</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="lib/jquery-1.12.4.js"></script>
+<script src="logic.js"></script>
+
+</html>
